@@ -132,10 +132,33 @@ div.negativefloatingpoint{
     width: 460px;
     background-color: chartreuse;
 }
+div.functioninput{
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 40px;
+    width: 300px;
+    background-color: gray;
+}
+div.functioninputbtn{
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 310px;
+    height: 40px;
+    width: 140px;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    justify-content: center;
+    text-shadow: 2px 2px black;
+    border-radius: 0px 5px 5px 0px;
+}
 div.one{
     display: flex;
     position: absolute;
-    top: 1px;
+    top: 50px;
     left: 10px;
     height: 50px;
     width: 440px;
@@ -144,7 +167,7 @@ div.one{
 div.two{
     display: flex;
     position: absolute;
-    top: 52px;
+    top: 100px;
     left: 10px;
     height: 50px;
     width: 440px;
@@ -153,7 +176,7 @@ div.two{
 div.three{
     display: flex;
     position: absolute;
-    top: 103px;
+    top: 150px;
     left: 10px;
     height: 50px;
     width: 440px;
@@ -162,7 +185,7 @@ div.three{
 div.four{
     display: flex;
     position: absolute;
-    top: 154px;
+    top: 200px;
     left: 10px;
     height: 50px;
     width: 440px;
@@ -221,20 +244,42 @@ div.absolutevalue{
     background-color: greenyellow;
     font-size: 20px;
 }
+div.avinput{
+    display: flex;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 15px;
+    width: 250px;
+    background-color: gray;
+    color: white;
+}
+div.avinputbtn{
+    display: flex;
+    position: absolute;
+    top: 2px;
+    left: 252px;
+    height: 17px;
+    width: 200px;
+    background-color: blue;
+    color: white;
+    font-size: small;
+    justify-content: center;
+}
 div.avuip{
     display: flex;
     position: absolute;
-    top: 5px;
+    top: 20px;
     left: 20px;
-    height: 20px;
+    height: 10px;
     width: 380px;
 }
 div.avuipr{
     display: flex;
     position: absolute;
-    top: 27px;
+    top: 40px;
     left: 20px;
-    height: 20px;
+    height: 10px;
     width: 380px;
 }
 span#unfav{
@@ -245,10 +290,240 @@ span#unfavr{
     color: darkblue;
     padding: 0px 5px 0px 5px;
 }
+div.randomdicevalueheading{
+    display: flex;
+    position: absolute;
+    top: 1485px;
+    left: 100px;
+    height: 57px;
+    width: 500px;
+    background-color: yellow;
+    font-size: 45px;
+    line-height: 55px;
+    border-radius: 50px;
+    /* text-align: center; */
+    justify-content: center;
+    box-shadow: 3px 3px red;
+    text-shadow: 3px 3px white;
+    font-family: 'Courier New', Courier, monospace;
+}
+div.randomdicevalue{
+    display: flex;
+    position: absolute;
+    top: 1545px;
+    left: 120px;
+    height: 250px;
+    width: 460px;
+    background-color: chartreuse;
+}
+div.input{
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    height: 30px;
+    width: 440px;
+    border: 1px solid black;
+}
+input{
+    height: inherit;
+    width: inherit;
+    background-color: inherit;  
+    border: none; 
+}
+div.dice{
+    display: flex;
+    position: absolute;
+    top: 5px;
+    left: 130px;
+    height: 180px;
+    width: 180px;
+    border: 1px solid black;
+    font-size: 200px;
+    line-height: 180px;
+    justify-content: center;
+    background-color: black;
+    color: yellow;
+    text-shadow: 5px 5px red;
+    box-shadow: 10px 10px 10px gray;
+    border-radius: 20px;
+}
+div.generate{
+    display: flex;
+    position: absolute;
+    bottom: 5px;
+    left: 120px;
+    height: 50px;
+    width: 200px;
+    background-color: blue;
+    border-radius: 20px 20px 20px 20px ;
+    box-shadow: 4px 4px rgb(83, 206, 255);
+    color: white;
+    font-size: 40px;
+    justify-content: center;
+    line-height: 50px;
+    text-shadow: 2px 2px red;
+}
+div.tossheading{
+    display: flex;
+    position: absolute;
+    top: 1800px;
+    left: 100px;
+    height: 57px;
+    width: 500px;
+    background-color: yellow;
+    font-size: 70px;
+    line-height: 55px;
+    border-radius: 50px;
+    /* text-align: center; */
+    justify-content: center;
+    box-shadow: 3px 3px red;
+    text-shadow: 3px 3px white;
+    font-family: 'Courier New', Courier, monospace;
+}
+div.toss{
+    display: flex;
+    position: absolute;
+    top: 1860px;
+    left: 120px;
+    height: 250px;
+    width: 460px;
+    background-color: chartreuse;
+}
+div.headtail{
+    display: flex;
+    position: absolute;
+    top: 5px;
+    left: 40px;
+    height: 180px;
+    width: 380px;
+    border: 1px solid black;
+    font-size: 170px;
+    line-height: 180px;
+    justify-content: center;
+    background-color: black;
+    color: yellow;
+    text-shadow: 5px 5px red;
+    box-shadow: 10px 10px 10px gray;
+    border-radius: 20px;
+}
+div.onetohundredheading{
+    display: flex;
+    position: absolute;
+    top: 2115px;
+    left: 100px;
+    height: 57px;
+    width: 500px;
+    background-color: yellow;
+    font-size: 40px;
+    line-height: 55px;
+    border-radius: 50px;
+    /* text-align: center; */
+    justify-content: center;
+    box-shadow: 3px 3px red;
+    text-shadow: 3px 3px white;
+    font-family: 'Courier New', Courier, monospace;
+}
+div.onetohundred{
+    display: flex;
+    position: absolute;
+    top: 2175px;
+    left: 120px;
+    height: 250px;
+    width: 460px;
+    background-color: chartreuse;
+}
+div.onetohundredbox{
+    display: flex;
+    position: absolute;
+    top: 5px;
+    left: 40px;
+    height: 180px;
+    width: 380px;
+    border: 1px solid black;
+    font-size: 170px;
+    line-height: 180px;
+    justify-content: center;
+    background-color: black;
+    color: yellow;
+    text-shadow: 5px 5px red;
+    box-shadow: 10px 10px 10px gray;
+    border-radius: 20px;
+}
+div.userweightheading{
+    display: flex;
+    position: absolute;
+    top: 2430px;
+    left: 100px;
+    height: 57px;
+    width: 500px;
+    background-color: yellow;
+    font-size: 40px;
+    line-height: 55px;
+    border-radius: 50px;
+    /* text-align: center; */
+    justify-content: center;
+    box-shadow: 3px 3px red;
+    text-shadow: 3px 3px white;
+    font-family: 'Courier New', Courier, monospace;
+}
 
-
-
-
+div.usergetweight{
+    display: flex;
+    position: absolute;
+    top: 2490px;
+    left: 120px;
+    height: 250px;
+    width: 460px;
+    background-color: chartreuse;
+}
+div.userweightinput{
+    display: flex;
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    height: 50px;
+    width: 300px;
+    border-radius: 20px 0px 0px 20px;
+    background-color: gray;
+    color: black;
+    border: 1px solid black;
+}
+input#userweight{
+    border: inherit;
+    height: inherit;
+    width: inherit;
+    border-radius: inherit;
+    background-color: inherit;
+    color: black;
+}
+div.userweightbtn{
+    display: flex;
+    position: absolute;
+    top: 5px;
+    left: 320px;
+    height: 50px;
+    width: 120px;
+    border-radius: 0px 20px 20px 0px;
+    background-color: blue;
+    color: white;
+    font-size: 50px;
+    justify-content: center;
+    line-height: 40px;
+    border: 2px solid black;
+    text-shadow: 3px 3px red;
+}
+::-webkit-input-placeholder{
+    color: white;
+    font-family: monospace;
+}
+button{
+    background-color: inherit;
+    border: inherit;
+    border-radius: inherit;
+    color: inherit;
+    font-size: inherit;
+}
 
 
 
