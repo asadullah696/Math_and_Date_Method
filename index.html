@@ -17,7 +17,12 @@
             Positive Integar
         </div>
         <div class="positiveinteger">
-            
+            <div class="functioninput">
+                <input type="\" name="" id="positiveinteger" placeholder="Enter a number to get Values,">
+            </div>
+            <div class="functioninputbtn">
+                <button id="positiveintegerbtn" onClick="positiveinteger()">Get</button>
+            </div>
             <div class="1st one">
                 <span class="onehd hd">Number</span>
                 <span class="onevalue value" id="pi1"></span>
@@ -39,6 +44,12 @@
             Negative Integar
         </div>
         <div class="negativeinteger">
+            <div class="functioninput">
+                <input type="\" name="" id="negativeinteger" placeholder="Enter a number to get Values,">
+            </div>
+            <div class="functioninputbtn">
+                <button id="negativeintegerbtn" onClick="negativeinteger()">Get</button>
+            </div>
             <div class="1st one">
                 <span class="onehd hd">Number</span>
                 <span class="onevalue value" id="ni1"></span>
@@ -53,13 +64,19 @@
             </div>
             <div class="4th four">
                 <span class="fourhd hd">Ceil Value</span>
-                <span class="fourvalue value" id="ni3"></span>
+                <span class="fourvalue value" id="ni4"></span>
             </div>
         </div>
         <div class="positivefloatingpointheading">
             Positive Floating Point
         </div>
         <div class="positivefloatingpoint">
+            <div class="functioninput">
+                <input type="\" name="" id="positivefloating" placeholder="Enter a number to get Values,">
+            </div>
+            <div class="functioninputbtn">
+                <button id="positivefloatingbtn" onClick="positivefloating()">Get</button>
+            </div>
             <div class="1st one">
                 <span class="onehd hd">Number</span>
                 <span class="onevalue value" id="pfp1"></span>
@@ -81,6 +98,12 @@
             Negative Floating Point
         </div>
         <div class="negativefloatingpoint">
+            <div class="functioninput">
+                <input type="\" name="" id="negativefloating" placeholder="Enter a number to get Values,">
+            </div>
+            <div class="functioninputbtn">
+                <button id="negativefloatingbtn" onClick="negativefloating()">Get</button>
+            </div>
             <div class="1st one">
                 <span class="onehd hd">Number</span>
                 <span class="onevalue value" id="nfp1" ></span>
@@ -103,13 +126,69 @@
             Absolute Value
         </div>
         <div class="absolutevalue">
+            <div class="avinput">
+                <input type="text" name="" id="avinput" placeholder="Enter an number to get absolute,">
+            </div>
+            <div class="avinputbtn">
+                <button id="avinputbtn" onClick="absolutevalue()">Get Absolute</button>
+            </div>
             <div class="avuip">Your number is <span id="unfav">   </span>. <br /></div>
              <div class="avuipr"> The absolute value of number  <span id="unfav">  </span> is 
             <span id="unfavr">  </span>. </div>
         </div>
+        <div class="randomdicevalueheading">
+            Random Dice Value
+        </div>
+             <div class="randomdicevalue">
+                <!-- <div class="input">
+                    <input type="text" name="" id="">
+                </div> -->
+                <div class="dice" id="dice">
+                    
+                </div>
+                <div class="generate" id="generate">
+                    <button onClick="dice()">Generate</button>
+                </div>
+              </div>
+        <div class="tossheading">
+            Toss
+        </div>
+                <div class="toss">
+                    <div class="headtail" id="toss">
+                        Head
+                    </div>
+                    <div class="generate" id="tossbtn">
+                        
+                    </div>
+                  </div>
+
+                  <div class="onetohundredheading">
+                    Random Number 1-100
+                </div>
+                        <div class="onetohundred">
+                            <div class="onetohundredbox" id="onetohundred">
+                                
+                            </div>
+                            <div class="generate" id="onetohundredbtn">
+                                
+                            </div>
+                          </div>
+                <div class="userweightheading">
+                    User Weight
+                </div>
+                <div class="usergetweight">
+                    <div class="userweightinput">
+                        <input type="text" id="userweight" placeholder="Enter Your Weight here,">
+                    </div>
+                    <div class="userweightbtn" id="userweightbtn">
+                        
+                    </div>
+                </div>
 
 
+
+        </div>
     </div>
-    
+    <script src="./app.js"></script>
 </body>
 </html>
