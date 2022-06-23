@@ -1,3 +1,25 @@
+// Digital clock
+
+let time = document.getElementById("current-time");
+
+setInterval(() =>{
+let d = new Date();
+
+var monthNames = ["Jan,", "Feb,", "Mar,", "Apr,", "May,", "Jun,", "Jul,", "Aug,", "Sep,", "Oct,", "Nov,", "Dec,"];
+var theMonth = d.getMonth();
+var nameOfMonth = monthNames[theMonth];
+var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+var theDay = d.getDay();
+var nameOfDay = dayNames[theDay];
+var theDate = d.getDate();
+
+document.getElementById('day').innerText = nameOfMonth;
+document.getElementById('day2').innerText = nameOfDay;
+document.getElementById('day3').innerText = theDate;
+time.innerHTML = d.toLocaleTimeString();
+},1000);
+
+
 // Positive Integer
 
 function positiveinteger(){
@@ -64,13 +86,51 @@ function absolutevalue(){
 // Dice Function
 
 function dice(){
-    var dice = [1, 2, 3, 4, 5, 6];
-    var randomDice = Math.random(dice);
-    var result = Math.trunc(randomDice);
+    var dice = Math.random();
+    var randomDice = dice*6 + 1;
+    var result = Math.floor(randomDice);
     document.getElementById("dice").innerText = result;
 }
 
+// Toss
 
+function toss(){
+    var toss = Math.random();
+    var result = toss*2 + 1;
+    var tossResult = Math.floor(result);
+    var h = Head;
+    var t = Tails;
+    if(tossResult == 1){ 
+        document.getElementById("toss").innerText = t ;
+    }
+    if(tossResult == 2){ 
+        document.getElementById("toss").innerText = h ;
+    }
+}
+
+// One to Hundred
+
+function onetohundred(){
+    var dice = Math.random();
+    var randomDice = dice*100 + 1;
+    var result = Math.floor(randomDice);
+    document.getElementById("onetohundred").innerText = result;
+}
+
+// User Weight
+
+function userweight(){
+    var userInput = document.getElementById("userweight")
+    var dice = Math.random();
+    var randomDice = dice*1000 + 1;
+    var result = Math.floor(randomDice);
+    if (userInput >= result){
+        document.getElementById("onetohundred").innerText = "Correct";
+    }
+    if (userInput < result){
+        document.getElementById("onetohundred").innerText = "Wrong";
+    }
+}
 
 
 
