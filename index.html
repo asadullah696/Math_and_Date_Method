@@ -9,6 +9,21 @@
 </head>
 <body>
    
+    <div class="containertime">     
+        <div class="quotes">
+            
+            <!-- <h2>Digital Clock</h2> -->
+        </div>
+        <div class="time">
+            <h1 id="current-time"></h1>
+            <div>
+                <h3 id="day"></h3>
+                <h3 id="day2"></h3>
+                <h3 id="day3"></h3>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <div class="heading">
             Math & Date Method
@@ -155,10 +170,10 @@
         </div>
                 <div class="toss">
                     <div class="headtail" id="toss">
-                        Head
+                        
                     </div>
                     <div class="generate" id="tossbtn">
-                        
+                        <button onClick="toss()">Generate</button>
                     </div>
                   </div>
 
@@ -170,19 +185,25 @@
                                 
                             </div>
                             <div class="generate" id="onetohundredbtn">
-                                
+                                <button onClick="onetohundred()">Generate</button>
                             </div>
                           </div>
                 <div class="userweightheading">
-                    User Weight
+                    Choose Any Number
                 </div>
                 <div class="usergetweight">
                     <div class="userweightinput">
                         <input type="text" id="userweight" placeholder="Enter Your Weight here,">
                     </div>
-                    <div class="userweightbtn" id="userweightbtn">
-                        
+                    <div class="onetohundredbox2" id="onetohundred">
+                                
                     </div>
+                    <div class="userweightbtn" id="userweightbtn">
+                        <button onClick="userweight()">Get</button>
+                    </div>
+                </div>
+                <div class="game">
+
                 </div>
 
 
