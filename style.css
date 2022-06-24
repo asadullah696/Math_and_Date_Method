@@ -471,7 +471,7 @@ div.headtail{
     height: 180px;
     width: 380px;
     border: 1px solid black;
-    font-size: 170px;
+    font-size: 145px;
     line-height: 180px;
     justify-content: center;
     background-color: black;
@@ -479,6 +479,7 @@ div.headtail{
     text-shadow: 5px 5px red;
     box-shadow: 10px 10px 10px gray;
     border-radius: 20px;
+    /* transition-delay: 2s; */
 }
 div.onetohundredheading{
     display: flex;
@@ -531,14 +532,60 @@ div.onetohundredbox2{
     height: 180px;
     width: 380px;
     border: 1px solid black;
-    font-size: 170px;
-    line-height: 180px;
+    line-height: 40px;
     justify-content: center;
     background-color: black;
     color: yellow;
-    text-shadow: 5px 5px red;
+    text-shadow: 1px 1px red;
     box-shadow: 10px 10px 10px gray;
     border-radius: 20px;
+    text-indent: 5px;
+    font-size: 20px;
+}
+div.mainweight{
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 0px;
+    /* font-size: medium; */
+    color: black;
+    height: 35px;
+    width: 380px;
+    background-color: rgba(183, 197, 95, 0.342);
+    box-shadow: 0px 0px 5px white;
+}
+div.pound{
+    display: flex;
+    position: absolute;
+    top: 55px;
+    left: 0px;
+    height: 35px;
+    color: black;
+    width: 380px;
+    background-color: rgba(183, 197, 95, 0.342);
+    box-shadow: 0px 0px 5px white;
+}
+div.gram{
+    display: flex;
+    position: absolute;
+    top: 95px;
+    left: 0px;
+    height: 35px;
+    width: 380px;
+    background-color: rgba(183, 197, 95, 0.342);
+    color: black;
+    box-shadow: 0px 0px 5px white;
+}
+div.miligram{
+    display: flex;
+    position: absolute;
+    color: black;
+    top: 135px;
+    left: 0px;
+    height: 35px;
+    width: 380px;
+    background-color: rgba(183, 197, 95, 0.342);
+    box-shadow: 0px 0px 5px white;
 }
 div.userweightheading{
     display: flex;
@@ -597,12 +644,214 @@ div.userweightbtn{
     border-radius: 0px 20px 20px 0px;
     background-color: blue;
     color: white;
-    font-size: 50px;
+    font-size: 40px;
     justify-content: center;
     line-height: 40px;
     border: 2px solid black;
     text-shadow: 3px 3px red;
-} */
+}
+div.gameheading{
+    display: flex;
+    position: absolute;
+    top: 2745px;
+    left: 100px;
+    height: 57px;
+    width: 500px;
+    background-color: yellow;
+    font-size: 40px;
+    line-height: 55px;
+    border-radius: 50px;
+    /* text-align: center; */
+    justify-content: center;
+    box-shadow: 3px 3px red;
+    text-shadow: 3px 3px white;
+    font-family: 'Courier New', Courier, monospace;
+}
+div.game{
+    display: flex;
+    position: absolute;
+    top: 2805px;
+    left: 120px;
+    height: 200px;
+    width: 460px;
+    background-color: chartreuse;
+}
+div.gameinput{
+    display: flex;
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    height: 50px;
+    width: 300px;
+    border-radius: 20px 0px 0px 20px;
+    background-color: gray;
+    color: black;
+    border: 1px solid black;
+}
+div.gamebtn{
+    display: flex;
+    position: absolute;
+    top: 5px;
+    left: 320px;
+    height: 50px;
+    width: 120px;
+    border-radius: 0px 20px 20px 0px;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 40px;
+    border: 2px solid black;
+    text-shadow: 3px 3px red;
+}
+div.gameresult{
+    display: flex;
+    position: absolute;
+    top: 70px;
+    left: 2px;
+    height: 50px;
+    width: 456px;
+    background-color: rgba(183, 197, 95, 0.342);
+    box-shadow: 0px 0px 5px white;
+    line-height: 50px;
+    font-size: 25px;
+    text-shadow: 2px 2px 2px red;
+    text-indent: 10px;
+    /* background-color: black; */
+    /* color: white; */
+}
+div.gamedata{
+    display: flex;
+    position: absolute;
+    /* color: white; */
+    top: 130px;
+    text-indent: 10px;
+    left: 2px;
+    line-height: 50px;
+    height: 50px;
+    width: 456px;
+    /* background-color: black; */
+    background-color: rgba(183, 197, 95, 0.342);
+    box-shadow: 0px 0px 5px white;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px red
+}
+div.currentdateheading{
+    display: flex;
+    position: absolute;
+    top: 3010px;
+    left: 100px;
+    height: 57px;
+    width: 500px;
+    background-color: yellow;
+    font-size: 40px;
+    line-height: 55px;
+    border-radius: 50px;
+    /* text-align: center; */
+    justify-content: center;
+    box-shadow: 3px 3px red;
+    text-shadow: 3px 3px white;
+    font-family: 'Courier New', Courier, monospace;
+}
+div.currentdate{
+    display: flex;
+    position: absolute;
+    top: 3070px;
+    left: 120px;
+    height: 200px;
+    width: 460px;
+    background-color: chartreuse;
+}
+div.currentdatebrowse{
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 2px;
+    height: 100px;
+    width: 456px;
+    background-color: rgba(183, 197, 95, 0.342);
+    box-shadow: 0px 0px 5px white;
+    line-height: 50px;
+    font-size: 25px;
+    text-shadow: 2px 2px 2px red;
+    text-indent: 10px;
+    /* background-color: black; */
+    /* color: white; */
+}
+div.gettingdate{
+    display: flex;
+    position: absolute;
+    /* color: white; */
+    top: 130px;
+    text-indent: 10px;
+    left: 2px;
+    line-height: 50px;
+    height: 50px;
+    width: 456px;
+    /* background-color: black; */
+    background-color: rgba(183, 197, 95, 0.342);
+    box-shadow: 0px 0px 5px white;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px red
+}
+div.currentdayheading{
+    display: flex;
+    position: absolute;
+    top: 3275px;
+    left: 100px;
+    height: 57px;
+    width: 500px;
+    background-color: yellow;
+    font-size: 40px;
+    line-height: 55px;
+    border-radius: 50px;
+    /* text-align: center; */
+    justify-content: center;
+    box-shadow: 3px 3px red;
+    text-shadow: 3px 3px white;
+    font-family: 'Courier New', Courier, monospace;
+}
+div.currentday{
+    display: flex;
+    position: absolute;
+    top: 3330px;
+    left: 120px;
+    height: 200px;
+    width: 460px;
+    background-color: chartreuse;
+}
+div.currentdaybrowse{
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 2px;
+    height: 100px;
+    width: 456px;
+    background-color: rgba(183, 197, 95, 0.342);
+    box-shadow: 0px 0px 5px white;
+    line-height: 100px;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px red;
+    text-indent: 10px;
+    /* background-color: black; */
+    /* color: white; */
+}
+div.gettingday{
+    display: flex;
+    position: absolute;
+    /* color: white; */
+    top: 130px;
+    text-indent: 10px;
+    left: 2px;
+    line-height: 50px;
+    height: 50px;
+    width: 456px;
+    /* background-color: black; */
+    background-color: rgba(183, 197, 95, 0.342);
+    box-shadow: 0px 0px 5px white;
+    font-size: 17px;
+    text-shadow: 2px 2px 2px red
+}
 ::-webkit-input-placeholder{
     color: white;
     font-family: monospace;
@@ -614,7 +863,9 @@ button{
     color: inherit;
     font-size: inherit;
 }
-
+input{
+    border-radius: inherit;
+}
 
 
 
