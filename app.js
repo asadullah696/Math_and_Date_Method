@@ -147,7 +147,6 @@ function game(){
 
 // Current Date
 
-// function currentDate(){
     var date = new Date();
     document.getElementById("currentdate2").innerText += "Current date is " + date;
     document.getElementById("gettingdate").innerText += "The Date is get from your browser via using new Date()"
@@ -157,15 +156,45 @@ function game(){
     // ("gettingday").innerText += "The Day is get via using new date.getDay()"
     var month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 
-    currentDate = new Date();
-    var currentMonth = month[currentDate.getMonth()];
+    // currentDate = new Date();
+    var currentMonth = month[date.getMonth()];
     document.getElementById("currentday2").innerText += "Current month: " + currentMonth ;
     document.getElementById("gettingday").innerText += "The Month is get via using new month[currentDate.getMonth()]"
-// }
+    
+    var currentDay = day[date.getDay()];
+    if (currentDay === "Sun" || currentDay === "Sat"  ) {
+    document.getElementById("currentmonth2").innerHTML += "It's Fun day ";
+    }
+    else {
+    document.getElementById("currentmonth2").innerHTML += "It's Work day";
+    }
+    document.getElementById("gettingmonth").innerText += "The Day is get via using new day[date.getDay()]"
 
 
+ // Age Calculator
+ 
+    function age(){
+        var currentDate = new Date();
+        var currentYear = currentDate.getFullYear();
+        var userInput = document.getElementById("ageinput").value;
+        var resultYear = currentYear - userInput;
+        var resultMonth = resultYear * 12;
+        document.getElementById("ageresult").innerText += "You Are " + resultYear + " years Old.";
+        document.getElementById("ageresult2").innerText += "You are " + resultMonth + " months Old."
+        document.getElementById("agedata").innerText += "Your age is get via ('CuurentYear - Your Input') ."
+        
+    }
 
+// Electric Bill
 
+    function bill(){
+        var userName = document.getElementById("nameinput").value;
+        var a = userName;
+        var userUnit = document.getElementById("unitinput").value;
+        var result = userUnit * 28;
+        document.getElementById("charges").innerText = "Dear " + a +  ", Charges per unit is 28Rs, "
+        document.getElementById("billdata").innerText += "You have to pay " + result + "Rs"
+    }
 
 
 
